@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive top Navbar</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        ul.topnav {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: auto;
+            background-color: #333;
+        }
+        ul.topnav li {float:left}
+        ul.topnav li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 14px 16px;
+        }
+        ul.topnav li a.active{background-color: #1916c4;}
+        ul.topnav li a:hover:not(.active) {
+            background-color: #111;
+        }
+        ul.topnav li.right {float: right;}
+        div.content {
+            padding: 0 10px;
+            margin: 0;
+        }
+        h3, p {
+            margin-top: 20px;
+        }
+        @media screen and (max-width:600px) {
+            ul.topnav li.right, ul.topnav li {
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class="topnav">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#aboutme">About</a></li>
+        <li class="right"><a href="#contactme">Contact</a></li>
+    </ul>
+    <div class="content">
+        <h2>Responsive Topnav Example</h2>
+        <p>
+            This example use media queries to stack the topnav vertically
+             when the screen size is 600px or less.
+        </p>
+        <p>
+            You will learn more about media queries and responsive web 
+            design later in our CSS Tutorial.
+        </p>
+        <h3>Resize the browser window to see the effect.</h3>
+    </div>
+</body>
+</html>
